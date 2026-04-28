@@ -1,0 +1,43 @@
+<section class="booking" id="rdv">
+  <div class="section-header reveal">
+    <span class="section-roman">IV</span>
+    <h2 class="section-title">Prendre rendez-vous</h2>
+    <p class="section-script">Choisir le cadre qui vous va</p>
+  </div>
+  <div class="booking__grid">
+    <article class="booking__card reveal">
+      <div class="booking__icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 54 L10 28 L32 12 L54 28 L54 54 Z"/>
+          <path d="M24 54 L24 38 L40 38 L40 54"/>
+          <circle cx="32" cy="44" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+      <h3>À domicile</h3>
+      <p>Je me déplace chez vous, dans un rayon doux autour de la ville. On installe ensemble un espace calme, et la séance commence là où vous êtes déjà — chez vous.</p>
+      <p class="booking__note">Frais de déplacement précisés lors de la prise de rendez-vous.</p>
+    </article>
+    <article class="booking__card reveal">
+      <div class="booking__icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8 L48 8 L48 56 L16 56 Z" rx="4"/>
+          <line x1="16" y1="14" x2="48" y2="14"/>
+          <line x1="16" y1="48" x2="48" y2="48"/>
+          <circle cx="32" cy="52" r="1.4" fill="currentColor"/>
+        </svg>
+      </div>
+      <h3>Par téléphone</h3>
+      <p>Pour l'accompagnement personnalisé, on peut aussi se parler à distance. Une voix, une écoute, un fil — parfois cela suffit à déposer ce qui pèse.</p>
+      <p class="booking__note">Idéal pour les suivis et les passages plus délicats.</p>
+    </article>
+  </div>
+  <div class="booking__payment reveal">
+    <h3 class="booking__payment-title">Régler la séance</h3>
+    <p>Espèces, chèque ou virement — au choix, après la séance. Pas d'acompte demandé.</p>
+    <a href="#contact" class="btn btn--primary">Réserver maintenant</a>
+  </div>
+  <div class="booking__wash" aria-hidden="true">
+    {{ $coral := resources.Get "svg/wash-coral.svg" }}
+    {{ $coral.Content | safeHTML }}
+  </div>
+</section>

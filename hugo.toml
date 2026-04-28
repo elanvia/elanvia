@@ -1,0 +1,22 @@
+baseURL = "https://username.github.io/elanvia-site/"
+languageCode = "fr-fr"
+title = "Elanvia — Accompagnement vers l'équilibre"
+defaultContentLanguage = "fr"
+enableRobotsTXT = true
+
+[params]
+  description = "Elanvia — Accompagnement vers l'équilibre. Soins, accompagnement personnalisé, cercles de femmes et programmes par Laurie."
+  author = "Laurie"
+  phone = "+33 6 00 00 00 00"
+  phoneDisplay = "06 00 00 00 00"
+  email = "contact@elanvia.fr"
+  instagram = "https://instagram.com/elanvia"
+  instagramHandle = "@elanvia"
+  facebook = "https://facebook.com/elanvia"
+  facebookHandle = "Elanvia"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[minify]
+  minifyOutput = true

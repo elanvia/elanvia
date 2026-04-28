@@ -1,0 +1,36 @@
+services:
+  - id: soin
+    roman: "I"
+    title: "Soin énergétique"
+    tagline: "Reposer le corps, libérer ce qui pèse"
+    description: "Une séance pour relâcher les tensions accumulées, dénouer ce qui freine, et retrouver une circulation intérieure plus fluide. Vous repartez allégée, comme après une longue respiration."
+    duration: "1 heure"
+    price: "70 €"
+    accent: "sage"
+
+  - id: accompagnement
+    roman: "II"
+    title: "Accompagnement personnalisé"
+    tagline: "Un cheminement à votre rythme"
+    description: "Un espace d'écoute et de soutien construit autour de ce que vous traversez. On avance ensemble, sans recette toute faite, vers ce qui a besoin d'être démêlé, posé, ou simplement reconnu."
+    duration: "1 h 30"
+    price: "90 €"
+    accent: "plum"
+
+  - id: cercle
+    roman: "III"
+    title: "Cercle de femmes"
+    tagline: "Se retrouver, ensemble"
+    description: "Un temps suspendu en petit groupe, pour partager, ressentir et tisser du lien dans un cadre bienveillant. Chaque cercle a sa thématique et son rituel doux."
+    duration: "3 heures"
+    price: "45 €"
+    accent: "rose"
+
+  - id: programme
+    roman: "IV"
+    title: "Programme « Retour à soi »"
+    tagline: "Un chemin de trois mois"
+    description: "Six séances réparties sur trois mois pour traverser un passage, ancrer un changement, ou simplement revenir habiter pleinement votre vie. Soins, dialogues et pratiques entre les séances."
+    duration: "6 séances · 3 mois"
+    price: "480 €"
+    accent: "saffron"

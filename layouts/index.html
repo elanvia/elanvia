@@ -1,0 +1,15 @@
+{{ partial "head.html" . }}
+<body>
+  {{ partial "nav.html" . }}
+  <main id="contenu">
+    {{ partial "section-hero.html" . }}
+    {{ partial "section-about.html" . }}
+    {{ partial "section-offer.html" . }}
+    {{ partial "section-booking.html" . }}
+    {{ partial "section-contact.html" . }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

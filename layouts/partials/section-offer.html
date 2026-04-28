@@ -1,0 +1,24 @@
+<section class="offer" id="offre">
+  <div class="section-header reveal">
+    <span class="section-roman">III</span>
+    <h2 class="section-title">L'offre</h2>
+    <p class="section-script">Quatre chemins vers vous-même</p>
+  </div>
+  <ul class="offer__grid">
+    {{ range $i, $s := site.Data.services.services }}
+    <li class="offer__card offer__card--{{ $s.accent }} reveal" style="--stagger:{{ mul $i 80 }}ms">
+      <div class="offer__card-head">
+        <span class="offer__roman">{{ $s.roman }}</span>
+        <h3 class="offer__title">{{ $s.title }}</h3>
+        <p class="offer__tagline">{{ $s.tagline }}</p>
+      </div>
+      <p class="offer__desc">{{ $s.description }}</p>
+      <dl class="offer__meta">
+        <div><dt>Durée</dt><dd>{{ $s.duration }}</dd></div>
+        <div><dt>Tarif</dt><dd class="offer__price">{{ $s.price }}</dd></div>
+      </dl>
+    </li>
+    {{ end }}
+  </ul>
+  <p class="offer__note reveal">Les tarifs s'entendent par séance. Un échange préalable de quelques minutes est offert pour orienter votre demande.</p>
+</section>

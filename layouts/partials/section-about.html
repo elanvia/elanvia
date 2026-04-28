@@ -1,0 +1,26 @@
+<section class="about" id="qui">
+  <div class="section-header reveal">
+    <span class="section-roman">II</span>
+    <h2 class="section-title">L'accompagnatrice</h2>
+    <p class="section-script">Laurie</p>
+  </div>
+  <div class="about__grid">
+    <figure class="about__portrait reveal">
+      <div class="about__portrait-frame">
+        {{ $portrait := resources.Get "svg/portrait-placeholder.svg" }}
+        {{ $portrait.Content | safeHTML }}
+      </div>
+      <figcaption>Laurie · accompagnante en équilibre</figcaption>
+    </figure>
+    <div class="about__text reveal">
+      <p class="lede">Je m'appelle Laurie. Depuis plusieurs années, j'accompagne des femmes et des hommes qui traversent des passages — parfois doux, parfois rudes — et qui cherchent un endroit pour souffler.</p>
+      <p>Mon travail s'est tissé au fil d'une formation continue en soins énergétiques, en écoute active, et de beaucoup, beaucoup d'heures à côté de personnes en chemin. Je crois aux gestes simples : poser les choses, ralentir, laisser revenir le corps, écouter ce qui demande à être entendu.</p>
+      <p>Ici, pas de méthode miracle ni de discours qui surplombe. Juste un espace où vous pouvez venir comme vous êtes, et repartir un peu plus vous-même. Que ce soit pour un soin ponctuel ou un cheminement plus long, je vous accueille avec le même soin.</p>
+      <p class="signature">— Laurie</p>
+    </div>
+  </div>
+  <div class="about__wash" aria-hidden="true">
+    {{ $sage := resources.Get "svg/wash-sage.svg" }}
+    {{ $sage.Content | safeHTML }}
+  </div>
+</section>
