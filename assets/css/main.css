@@ -44,15 +44,33 @@ body {
   line-height: 1.7;
   color: var(--ink);
   background: var(--cream);
-  background-image:
-    radial-gradient(ellipse at 0% 0%, rgba(232, 122, 93, 0.08), transparent 50%),
-    radial-gradient(ellipse at 100% 30%, rgba(74, 143, 168, 0.07), transparent 55%),
-    radial-gradient(ellipse at 50% 100%, rgba(216, 155, 181, 0.08), transparent 60%),
-    url("../svg/grain.svg");
-  background-size: 100% 100%, 100% 100%, 100% 100%, 240px 240px;
-  background-attachment: fixed, fixed, fixed, scroll;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+/* Watercolor background — fond-ecran.png with cream veil for readability */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/images/fond-ecran.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 50% 30%, rgba(245, 239, 228, 0.55) 0%, rgba(245, 239, 228, 0.82) 70%, rgba(245, 239, 228, 0.92) 100%),
+    url("../svg/grain.svg");
+  background-size: 100% 100%, 240px 240px;
+  pointer-events: none;
 }
 
 ::selection { background: var(--plum); color: var(--cream); }
