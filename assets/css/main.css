@@ -43,34 +43,17 @@ body {
   font-size: clamp(1rem, 0.55vw + 0.9rem, 1.0625rem);
   line-height: 1.7;
   color: var(--ink);
-  background: var(--cream);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  position: relative;
-}
-
-/* Watercolor background — fond-ecran.png with cream veil for readability */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background-image: url("/images/fond-ecran.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  pointer-events: none;
-}
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(ellipse at 50% 30%, rgba(245, 239, 228, 0.55) 0%, rgba(245, 239, 228, 0.82) 70%, rgba(245, 239, 228, 0.92) 100%),
-    url("../svg/grain.svg");
-  background-size: 100% 100%, 240px 240px;
-  pointer-events: none;
+  background-color: var(--cream);
+  background-image:
+    linear-gradient(rgba(245, 239, 228, 0.45), rgba(245, 239, 228, 0.65)),
+    url("../svg/grain.svg"),
+    url("../images/fond-ecran.png");
+  background-size: auto, 240px 240px, cover;
+  background-position: center, 0 0, center center;
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-attachment: fixed, scroll, fixed;
 }
 
 ::selection { background: var(--plum); color: var(--cream); }
