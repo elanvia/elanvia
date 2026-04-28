@@ -1,7 +1,7 @@
 (() => {
   const nav = document.querySelector("[data-nav]");
   const toggle = document.querySelector(".nav__toggle");
-  const mobileMenu = document.getElementById("nav-mobile");
+  const mobileMenu = document.getElementById("nav-links");
 
   // Sticky nav state
   const onScroll = () => {
@@ -13,10 +13,17 @@
 
   // Mobile menu
   if (toggle && mobileMenu) {
+    const isMobile = () => window.matchMedia("(max-width: 760px)").matches;
     const setOpen = (open) => {
       toggle.setAttribute("aria-expanded", String(open));
-      mobileMenu.hidden = !open;
+      mobileMenu.hidden = open ? false : isMobile();
     };
+    // Initialize: hide on mobile
+    if (isMobile()) mobileMenu.hidden = true;
+    window.matchMedia("(max-width: 760px)").addEventListener("change", (e) => {
+      if (!e.matches) mobileMenu.hidden = false;
+      else if (toggle.getAttribute("aria-expanded") !== "true") mobileMenu.hidden = true;
+    });
     toggle.addEventListener("click", () => {
       const expanded = toggle.getAttribute("aria-expanded") === "true";
       setOpen(!expanded);
