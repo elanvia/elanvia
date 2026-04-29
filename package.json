@@ -1,0 +1,11 @@
+{
+  "name": "elanvia-site",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.8.3"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  }
+}
