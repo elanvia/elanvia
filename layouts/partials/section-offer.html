@@ -5,7 +5,7 @@
     <p class="section-script">Quatre chemins vers vous-même</p>
   </div>
   <ul class="offer__grid">
-    {{ range $i, $s := site.Data.services.services }}
+    {{ range $i, $s := hugo.Data.services.services }}
     <li class="offer__card offer__card--{{ $s.accent }} reveal" style="--stagger:{{ mul $i 80 }}ms">
       <div class="offer__card-head">
         <span class="offer__roman">{{ $s.roman }}</span>
