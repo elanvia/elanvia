@@ -10,7 +10,7 @@ One-page static site for **Elanvia — Accompagnement vers l'équilibre**, the w
 - **Google Fonts**: Fraunces (display), Pinyon Script (cursive accent), Mulish (body)
 - **GitHub Actions** → GitHub Pages
 
-No `npm`, no `package.json`, no node modules. The whole site is plain text files + 1 logo PNG.
+No npm runtime dependencies. `package.json` exists for dev tooling only (Prettier).
 
 ## Project Structure
 
@@ -39,7 +39,23 @@ hugo server          # dev server with live reload → http://localhost:1313
 hugo --minify        # production build → ./public/
 ```
 
-No tests (static site). Verification = visual + Lighthouse + cross-browser smoke check.
+## Tests
+
+```bash
+bash tests/run_tests.sh
+```
+
+Three scripts run in order: `tests/check_data.py` (YAML schema), `tests/check_build.sh` (Hugo build + 4 service cards + fingerprinted assets), `tests/check_html.py` (structural HTML assertions — section IDs, JS DOM hooks, heading hierarchy, defer). No npm required for tests; Python stdlib + pyyaml only.
+
+## Code Formatting
+
+```bash
+npm install          # once
+npm run format       # reformat all files
+npm run format:check # CI check (exits non-zero if any file differs)
+```
+
+Prettier (`^3.8.3`) formats `assets/css/main.css`, `assets/js/main.js`, `data/services.yaml`, and workflow YAML. Hugo templates (`layouts/`) are excluded via `.prettierignore` — Go template syntax breaks Prettier's HTML parser.
 
 ## Editing Content (for Laurie, no Hugo knowledge needed)
 

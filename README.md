@@ -20,6 +20,24 @@ hugo --minify
 
 Le site est généré dans `public/`.
 
+## Tests
+
+```bash
+bash tests/run_tests.sh
+```
+
+Trois vérifications enchaînées : validation du YAML (`data/services.yaml`), build Hugo + comptage des cartes de services, assertions sur la structure HTML générée.
+
+## Formatage du code
+
+```bash
+npm install          # une seule fois
+npm run format       # reformater tous les fichiers
+npm run format:check # vérifier sans modifier (utilisé en CI)
+```
+
+Prettier formate CSS, JS et YAML. Les templates Hugo (`layouts/`) sont exclus (syntaxe Go non supportée).
+
 ## Édition du contenu
 
 - **Tarifs et services** : `data/services.yaml`
