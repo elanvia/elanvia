@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="Soin d'apaisement émotionnel — image à venir">
+  <defs>
+    <filter id="b1" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+    <radialGradient id="g1a" cx="35%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#7BA886" stop-opacity=".75"/>
+      <stop offset="100%" stop-color="#7BA886" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g1b" cx="70%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#7BA886" stop-opacity=".5"/>
+      <stop offset="100%" stop-color="#7BA886" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g1c" cx="55%" cy="75%" r="40%">
+      <stop offset="0%" stop-color="#D89BB5" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#D89BB5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="220" fill="#F5EFE4"/>
+  <g filter="url(#b1)">
+    <ellipse cx="140" cy="110" rx="130" ry="100" fill="url(#g1a)"/>
+    <ellipse cx="280" cy="88" rx="110" ry="90" fill="url(#g1b)"/>
+    <ellipse cx="220" cy="165" rx="100" ry="70" fill="url(#g1c)"/>
+  </g>
+  <g fill="none" stroke="#2B1F3A" stroke-opacity=".1" stroke-width="1">
+    <path d="M180 80 Q200 60 220 80 Q240 100 220 115 Q200 130 180 115 Q160 100 180 80Z"/>
+    <path d="M200 115 L200 155"/>
+  </g>
+  <text x="200" y="212" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12" fill="#2B1F3A" fill-opacity=".4">image à venir</text>
+</svg>

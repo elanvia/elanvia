@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="Soin d'écoute — image à venir">
+  <defs>
+    <filter id="b6" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="17"/></filter>
+    <radialGradient id="g6a" cx="42%" cy="48%" r="52%">
+      <stop offset="0%" stop-color="#D89BB5" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#D89BB5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g6b" cx="70%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#D89BB5" stop-opacity=".42"/>
+      <stop offset="100%" stop-color="#D89BB5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g6c" cx="35%" cy="72%" r="40%">
+      <stop offset="0%" stop-color="#6B3F8E" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#6B3F8E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="220" fill="#F5EFE4"/>
+  <g filter="url(#b6)">
+    <ellipse cx="168" cy="105" rx="140" ry="92" fill="url(#g6a)"/>
+    <ellipse cx="280" cy="88" rx="110" ry="82" fill="url(#g6b)"/>
+    <ellipse cx="140" cy="155" rx="110" ry="68" fill="url(#g6c)"/>
+  </g>
+  <g fill="none" stroke="#2B1F3A" stroke-opacity=".1" stroke-width="1">
+    <path d="M185 85 Q200 70 215 85 Q228 100 220 115 Q212 128 200 128 Q188 128 180 115 Q172 100 185 85Z"/>
+    <path d="M193 128 Q190 145 178 152"/>
+    <path d="M207 128 Q210 145 222 152"/>
+  </g>
+  <text x="200" y="212" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="12" fill="#2B1F3A" fill-opacity=".4">image à venir</text>
+</svg>

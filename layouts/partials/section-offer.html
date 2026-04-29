@@ -7,6 +7,7 @@
   <ul class="offer__grid">
     {{ range $i, $s := hugo.Data.services.services }}
     <li class="offer__card offer__card--{{ $s.accent }} reveal" style="--stagger:{{ mul $i 80 }}ms">
+      <img class="offer__card-image" src="{{ printf "images/services/%s.svg" $s.id | relURL }}" alt="{{ $s.title }}" aria-hidden="true">
       <div class="offer__card-head">
         <span class="offer__roman">{{ $s.roman }}</span>
         <h3 class="offer__title">{{ $s.title }}</h3>
