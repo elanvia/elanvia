@@ -8,9 +8,9 @@ hugo --source "$REPO" --destination "$REPO/public" --minify 2>&1 | tail -3
 HTML="$REPO/public/index.html"
 [ -s "$HTML" ] || { echo "FAIL: public/index.html missing or empty"; exit 1; }
 
-# 4 service cards from data loop
+# 6 service cards from data loop
 COUNT=$(grep -o 'offer__card--' "$HTML" | wc -l | tr -d ' ')
-[ "$COUNT" -eq 4 ] || { echo "FAIL: expected 4 service cards, got $COUNT"; exit 1; }
+[ "$COUNT" -eq 6 ] || { echo "FAIL: expected 6 service cards, got $COUNT"; exit 1; }
 
 # All accent modifiers present
 for ACCENT in sage plum rose saffron; do
@@ -30,4 +30,4 @@ grep -q 'js/main.min\.' "$HTML" \
 find "$REPO/public/js" -name "main.min.*.js" | grep -q . \
     || { echo "FAIL: no fingerprinted JS file in public/js/"; exit 1; }
 
-echo "OK: build succeeded — 4 service cards + fingerprinted assets verified"
+echo "OK: build succeeded — 6 service cards + fingerprinted assets verified"

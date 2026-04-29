@@ -18,7 +18,7 @@ No npm runtime dependencies. `package.json` exists for dev tooling only (Prettie
 |------|---------|
 | `hugo.toml` | Site config + all editable params (phone, email, socials, baseURL) |
 | `content/_index.md` | Empty stub — page is rendered entirely by `layouts/index.html` |
-| `data/services.yaml` | The 4 services with title/description/duration/price/accent — single source of truth for the offer section |
+| `data/services.yaml` | The 6 services with title/description/duration/price/accent — single source of truth for the offer section |
 | `layouts/index.html` | Top-level page assembling 5 section partials |
 | `layouts/partials/head.html` | `<head>`, fonts, fingerprinted CSS via `resources.Get` |
 | `layouts/partials/nav.html` | Sticky nav with mobile toggle |
@@ -45,7 +45,7 @@ hugo --minify        # production build → ./public/
 bash tests/run_tests.sh
 ```
 
-Three scripts run in order: `tests/check_data.py` (YAML schema), `tests/check_build.sh` (Hugo build + 4 service cards + fingerprinted assets), `tests/check_html.py` (structural HTML assertions — section IDs, JS DOM hooks, heading hierarchy, defer). No npm required for tests; Python stdlib + pyyaml only.
+Three scripts run in order: `tests/check_data.py` (YAML schema), `tests/check_build.sh` (Hugo build + 6 service cards + fingerprinted assets), `tests/check_html.py` (structural HTML assertions — section IDs, JS DOM hooks, heading hierarchy, defer). No npm required for tests; Python stdlib + pyyaml only.
 
 ## Code Formatting
 

@@ -27,11 +27,11 @@ if "services" not in raw:
 
 services = raw["services"]
 check(isinstance(services, list), "'services' must be a list")
-check(len(services) == 4, f"expected 4 services, got {len(services)}")
+check(len(services) == 6, f"expected 6 services, got {len(services)}")
 
 REQUIRED = ["id", "roman", "title", "tagline", "description", "duration", "price", "accent"]
 VALID_ACCENTS = {"sage", "plum", "rose", "saffron"}
-VALID_ROMANS = {"I", "II", "III", "IV"}
+VALID_ROMANS = {"I", "II", "III", "IV", "V", "VI"}
 
 ids_seen = set()
 for i, svc in enumerate(services):
