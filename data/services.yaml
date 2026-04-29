@@ -1,7 +1,7 @@
 services:
   - id: soin
     roman: "I"
-    title: "Soin énergétique"
+    title: "Soin d'apaisement émotionnel"
     tagline: "Reposer le corps, libérer ce qui pèse"
     description: "Une séance pour relâcher les tensions accumulées, dénouer ce qui freine, et retrouver une circulation intérieure plus fluide. Vous repartez allégée, comme après une longue respiration."
     duration: "1 heure"
@@ -34,3 +34,21 @@ services:
     duration: "6 séances · 3 mois"
     price: "480 €"
     accent: "saffron"
+
+  - id: detente
+    roman: "V"
+    title: "Soin détente — Hammam assis"
+    tagline: "Chaleur, relâchement, présence"
+    description: "Un soin doux pratiqué sur chaise, habillée, qui allie chaleur apaisante et toucher enveloppant. Idéal pour déposer les tensions du quotidien et retrouver un souffle plus ample, en quelques instants seulement."
+    duration: "45 minutes"
+    price: "— €"
+    accent: "sage"
+
+  - id: ecoute
+    roman: "VI"
+    title: "Soin d'écoute"
+    tagline: "Être entendue, pleinement"
+    description: "Un espace où la parole peut se poser sans jugement. Proposé en écoute seule — pour accueillir ce qui cherche à être dit — ou en écoute accompagnée d'un soin d'apaisement, pour allier le travail intérieur et le retour au corps."
+    duration: "1 heure"
+    price: "— €"
+    accent: "rose"
