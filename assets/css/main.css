@@ -653,6 +653,11 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+.offer__note--contact {
+  color: var(--plum);
+  font-weight: 600;
+  margin-bottom: -1rem;
+}
 
 /* =========================================================
    BOOKING
