@@ -315,22 +315,7 @@ section {
   position: relative;
   width: 100%;
   max-width: 920px;
-  background: var(--paper);
   padding: clamp(3rem, 6vw, 5.5rem) clamp(2rem, 5vw, 5rem);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(43, 31, 58, 0.06);
-}
-/* timbre-poste perforations */
-.hero__perforations {
-  position: absolute;
-  inset: -8px;
-  pointer-events: none;
-  background:
-    radial-gradient(circle 6px at 8px 8px, var(--cream) 99%, transparent 100%) 0 0/20px 20px,
-    radial-gradient(circle 6px at 8px 8px, var(--cream) 99%, transparent 100%) 0 100%/20px 20px,
-    radial-gradient(circle 6px at 8px 8px, var(--cream) 99%, transparent 100%) 0 0/20px 20px,
-    radial-gradient(circle 6px at 8px 8px, var(--cream) 99%, transparent 100%) 100% 0/20px 20px;
-  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
 }
 .hero__inner {
   position: relative;
