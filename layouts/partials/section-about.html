@@ -7,8 +7,7 @@
   <div class="about__grid">
     <figure class="about__portrait reveal">
       <div class="about__portrait-frame">
-        {{ $portrait := resources.Get "svg/portrait-placeholder.svg" }}
-        {{ $portrait.Content | safeHTML }}
+        <img src="{{ "images/profil.jpeg" | relURL }}" alt="Laurie, accompagnatrice en équilibre" />
       </div>
       <figcaption>Laurie · accompagnante en équilibre</figcaption>
     </figure>

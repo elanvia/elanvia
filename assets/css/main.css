@@ -465,7 +465,7 @@ section {
 .about__portrait-frame:hover {
   transform: rotate(0deg) scale(1.01);
 }
-.about__portrait-frame svg {
+.about__portrait-frame img {
   width: 100%;
   height: auto;
   display: block;
