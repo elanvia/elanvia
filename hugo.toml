@@ -18,5 +18,7 @@ enableRobotsTXT = true
 [markup.goldmark.renderer]
   unsafe = true
 
+[taxonomies]
+
 [minify]
   minifyOutput = true
