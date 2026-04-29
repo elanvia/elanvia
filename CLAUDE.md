@@ -29,7 +29,7 @@ No npm runtime dependencies. `package.json` exists for dev tooling only (Prettie
 | `assets/svg/wash-*.svg` | Decorative watercolor backgrounds, inlined into partials |
 | `assets/svg/portrait-placeholder.svg` | Stand-in for Laurie's photo until provided |
 | `assets/svg/grain.svg` | Paper grain texture overlay (referenced from CSS via `url()`) |
-| `static/images/logo.png` | The Elanvia stamp logo (the only raster asset) |
+| `static/images/logo.jpeg` | The Elanvia stamp logo |
 | `.github/workflows/deploy.yml` | Build + publish to GitHub Pages on push to `main` |
 
 ## Build & Run
